@@ -27,9 +27,6 @@
   line-height: 19px;
 }
 
-.Weather li::first-letter {
-  text-transform: capitalize;
-}
 .Weather .btn-primary {
   color: #fff;
   background-color: #3aafa9;
@@ -63,8 +60,8 @@
   position: relative;
   bottom: 18px;
   right: 10px;
-  height: 90px;
-  width: 90px;
+  height: 64px;
+  width: 64px;
 }
 
 .Weather .unit {
