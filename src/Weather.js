@@ -11,6 +11,7 @@ export default function Weather() {
               type="search"
               placeholder="Enter a city.."
               className="form-control"
+              autoFocus="on"
             />
           </div>
           <div className="col-3">
@@ -23,10 +24,19 @@ export default function Weather() {
         <li>Wednesday 04:59</li>
         <li>Mostly Cloudy</li>
       </ul>
-      <div className="row">
+      <div className="row mt-3">
         <div className="col-6">
-          <img src="http://openweathermap.org/img/wn/04n@2x.png" alt="cloudy" />
-          50°F
+          <div className="clearfix">
+            <img
+              src="http://openweathermap.org/img/wn/04n@2x.png"
+              alt="cloudy"
+              className="float-left"
+            />
+            <span className="weather-temp">
+              <span className="temperature">50</span>
+              <span className="unit">°F |°C</span>
+            </span>
+          </div>
         </div>
         <div className="col-6">
           <ul>
