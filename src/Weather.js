@@ -3,7 +3,6 @@ import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
 import "./Weather.css";
 
-
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
@@ -18,7 +17,7 @@ export default function Weather(props) {
       description: response.data.weather[0].description,
       wind: response.data.wind.speed,
       humidity: response.data.main.temp,
-      iconURL: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
+      iconURL: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
     });
   }
 
@@ -60,8 +59,7 @@ export default function Weather(props) {
       </div>
     );
   } else {
-    search()
+    search();
     return "Loading...";
   }
-  }
-
+}
