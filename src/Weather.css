@@ -56,12 +56,11 @@
   right: 10px;
 }
 
-.Weather img {
+.Weather canvas {
   position: relative;
-  bottom: 18px;
+  top: 4px;
   right: 10px;
-  height: 64px;
-  width: 64px;
+  margin-right: 10px;
 }
 
 .Weather .unit {
