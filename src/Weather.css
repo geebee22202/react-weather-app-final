@@ -54,13 +54,7 @@
 .Weather .weather-temp {
   position: relative;
   right: 10px;
-}
-
-.Weather canvas {
-  position: relative;
-  top: 4px;
-  right: 10px;
-  margin-right: 10px;
+  margin-left: 15px;
 }
 
 .Weather .unit {
