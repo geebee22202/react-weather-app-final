@@ -1,0 +1,2 @@
+https://api.openweathermap.org/data/2.5/onecall?lat=74&lon=40.7&appid=935a08ec240b922ff7c41b1be851c24f
+    const apiKey = "935a08ec240b922ff7c41b1be851c24f";
